@@ -1,7 +1,5 @@
 """Use echarts in jupyter!"""
 
-__version__ = "0.1"
-
 ECHARTS_CDN = "https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min"
 ECHARTS_REQUIREJS_CONF = f"requirejs.config({{paths: {{echarts: '{ECHARTS_CDN}',}}}});"
 ECHARTS_TEMPLATE = f"""
