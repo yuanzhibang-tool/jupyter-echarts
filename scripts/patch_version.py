@@ -1,5 +1,6 @@
 # !/usr/bin/env python3
 import toml
+import subprocess
 
 toml_path='code/pyproject.toml'
 
@@ -18,4 +19,12 @@ toml_data['project']['version'] = new_version
 with open(toml_path, 'w') as f:
     toml.dump(toml_data, f)
 
-print(new_version)
+bash_script = f"""
+#!/bin/bash
+git add .
+git commit -m "auto version patch"
+git push
+git tag -a v{new_version} -m "auto tag v{new_version}"
+git push origin v{new_version}
+"""
+subprocess.run(bash_script, shell=True)
