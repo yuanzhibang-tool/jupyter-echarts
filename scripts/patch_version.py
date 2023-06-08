@@ -17,3 +17,5 @@ toml_data['project']['version'] = new_version
 
 with open(toml_path, 'w') as f:
     toml.dump(toml_data, f)
+
+print(new_version)
