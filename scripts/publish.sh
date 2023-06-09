@@ -1,4 +1,5 @@
 # !/bin/bash
+export FLIT_ROOT_INSTALL=1
 cd code
 flit install
 version=`dev-version --section=patch --toml_path=pyproject.toml`
