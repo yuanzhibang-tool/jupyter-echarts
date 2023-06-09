@@ -2,7 +2,8 @@
     "recommendations": [
         "github.copilot-nightly",
         "github.copilot-labs",
+        "github.copilot-chat",
         "ms-python.vscode-pylance",
-        "ms-python.python"
+        "ms-python.python",
     ]
 }
