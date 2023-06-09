@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "jupyter_echarts"
-version = "0.1.8"
+version = "0.1.9"
 authors = []
 classifiers = [ "License :: OSI Approved :: MIT License",]
 dynamic = [ "description",]
